@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClosingFox - Best Real Estate CRM for Indian Brokers & Developers</title>
+    <meta name="description" content="ClosingFox is the best real estate CRM for Indian brokers, developers, and sales teams. Auto-capture leads from 99acres, MagicBricks, Housing.com. Try free today.">
+    <meta name="keywords" content="real estate CRM, best CRM for real estate, real estate CRM India, CRM for brokers, property CRM, real estate lead management, ClosingFox">
+    <link rel="canonical" href="https://closingfox.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ClosingFox - Real Estate CRM for Teams Who Hate CRMs">
+    <meta property="og:description" content="Your whole day - one screen. The fastest real estate CRM built for Indian brokers and developers.">
+    <meta property="og:url" content="https://closingfox.com/">
+    <meta property="og:type" content="website">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.6;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        header {
+            padding: 40px 0 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #e85d04;
+            letter-spacing: -1px;
+        }
+
+        .logo-text span {
+            color: #1a1a2e;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+        }
+
+        .hero h1 em {
+            color: #e85d04;
+            font-style: normal;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #e85d04;
+            color: white;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #d45203;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            margin-top: 48px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat .number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #e85d04;
+        }
+
+        .stat .label {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 4px;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 0;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+        }
+
+        .feature-card {
+            padding: 28px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            transition: box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        /* Integrations */
+        .integrations {
+            padding: 40px 0 60px;
+            text-align: center;
+        }
+
+        .integrations h2 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .integrations p {
+            color: #666;
+            margin-bottom: 28px;
+        }
+
+        .integration-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .integration-badge {
+            background: #f5f5f5;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 60px 0;
+            background: #fafafa;
+            margin: 0 -24px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 36px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .price-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 32px 24px;
+            text-align: center;
+        }
+
+        .price-card.featured {
+            border-color: #e85d04;
+            position: relative;
+        }
+
+        .price-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .price-card .price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #e85d04;
+        }
+
+        .price-card .period {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .price-card .desc {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* CTA */
+        .bottom-cta {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .bottom-cta h2 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+        }
+
+        .bottom-cta p {
+            color: #666;
+            margin-bottom: 28px;
+            font-size: 1.05rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 0;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #e85d04;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .stat-row { gap: 24px; }
+            .logo-text { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-text">Closing<span>Fox</span></div>
+            <p>Real Estate CRM for Teams Who Hate CRMs</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Whole Day.<br><em>One Screen.</em></h1>
+            <p class="subtitle">
+                The fastest real estate CRM built for Indian brokers, developers, and sales teams. Auto-capture leads, assign in 5 seconds, and close more deals.
+            </p>
+            <a href="https://closingfox.com/" class="cta-btn">Get Started Free</a>
+
+            <div class="stat-row">
+                <div class="stat">
+                    <div class="number">5 sec</div>
+                    <div class="label">Lead to Assignment</div>
+                </div>
+                <div class="stat">
+                    <div class="number">3 Taps</div>
+                    <div class="label">Call Disposal</div>
+                </div>
+                <div class="stat">
+                    <div class="number">39</div>
+                    <div class="label">Auto Spot Rules</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Everything You Need to Close More Deals</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#x1F4E5;</div>
+                    <h3>Auto Lead Capture</h3>
+                    <p>Capture leads automatically from 99acres, MagicBricks, Housing.com, Facebook Ads, Google Ads, and webhooks. Zero manual entry.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#x26A1;</div>
+                    <h3>Instant Assignment</h3>
+                    <p>Round-robin, escalation, broadcast, or weighted modes. Leads reach your agents in 5 seconds flat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#x1F50D;</div>
+                    <h3>Spot System (39 Rules)</h3>
+                    <p>Automatically flags overdue follow-ups, cherry-picking, fake calls, and missed site visits. Nothing slips through.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#x1F4CD;</div>
+                    <h3>GPS Site Visit Tracking</h3>
+                    <p>Verify site visits with GPS location proof. Know exactly where your agents are and when they visited.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#x1F916;</div>
+                    <h3>AI Sales Coaching</h3>
+                    <p>Fox Focus gives your team AI-powered coaching to improve conversion rates and sales performance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#x1F4F1;</div>
+                    <h3>Works Offline</h3>
+                    <p>Full offline mode on Android. Your team can log calls and update leads even without internet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="integrations">
+        <div class="container">
+            <h2>Connects With Your Lead Sources</h2>
+            <p>Auto-capture from all major Indian property portals and ad platforms</p>
+            <div class="integration-list">
+                <span class="integration-badge">99acres</span>
+                <span class="integration-badge">MagicBricks</span>
+                <span class="integration-badge">Housing.com</span>
+                <span class="integration-badge">Facebook Ads</span>
+                <span class="integration-badge">Google Ads</span>
+                <span class="integration-badge">Webhooks</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div class="price">&#8377;499</div>
+                    <div class="period">/user/month</div>
+                    <div class="desc">For solo agents getting started with CRM</div>
+                </div>
+                <div class="price-card featured">
+                    <h3>Growth</h3>
+                    <div class="price">&#8377;699</div>
+                    <div class="period">/user/month</div>
+                    <div class="desc">For growing teams needing automation</div>
+                </div>
+                <div class="price-card">
+                    <h3>Developer</h3>
+                    <div class="price">&#8377;1,499</div>
+                    <div class="period">/user/month</div>
+                    <div class="desc">For developers and large brokerages</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-cta">
+        <div class="container">
+            <h2>Ready to Close More Deals?</h2>
+            <p>Join thousands of real estate professionals using ClosingFox to manage leads and grow revenue.</p>
+            <a href="https://closingfox.com/" class="cta-btn">Start Your Free Trial</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <a href="https://closingfox.com/">ClosingFox</a>. Real Estate CRM for Indian Brokers & Developers.</p>
+            <p style="margin-top: 8px;">Navi Mumbai, Maharashtra, India | +91-9819777760</p>
+        </div>
+    </footer>
+
+</body>
+</html>
